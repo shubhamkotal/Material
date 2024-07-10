@@ -1,9 +1,17 @@
 Stock list:
 
-ADANIENSOL
-ATGL
-ASIAN PAINT
-BAJAJ FINSERV
-Bankdhan bank
-bata india
-berger paints
+1. ADANIENSOL
+2. ATGL
+3. ASIAN PAINT
+4. BAJAJ FINSERV
+5. Bankdhan bank
+6. bata india
+7. berger paints
+8. DAL BHARAT
+9. DEVYANI
+10. FLUROCHEM
+11. IDFC FIRST BANK
+12. INDUSIND BANK
+13. KOTAK BANK
+14. JUBILANT FOOD
+15. 
