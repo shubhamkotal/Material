@@ -33,86 +33,86 @@ Stock list:
 31. ZEEL
 
 New stocks:
-AAVAS
-AARTIIND - swing + buffer
-AADHARHFC - swing
-ANGELONE - swing
-ARE&M - swing
-BALAMINES - swing
-BEML - swing
-AVANTIFEED - swing
-ASAHIINDIA - swing
-CCL - swing
-MAPMYINDIA - swing
-BATAINDIA - swing
-CASTROLIND - swing
-CUB - swing
-CERA - swing
-DEVYANI - swing
-DATAPATTNS -  swing
-CROMPTON - swing
-ENGINERSIN - swing
-EQUITASBNK - swing
-GRSE - swing
-GRINFRA - swing
-FINPIPE - swing
-FINEORG - swing
-HAPPSTMNDS - swing
-GSFC - swing
-ITI -swing
-IRCON - swing
-INOXINDIA - swing
-IIFL - swing
-HONASA - swing
-JKTYRE - swing
-JBMA - swing
-KNRCON -swing
-JYOTICNC - swing
-JWL - swing
-KANSAINER -swing
-KIRLOSBROS - swing
-MAHSEAMLES - swing
-MMTC - swing
-LAURUSLABS - swing
-LEMONTREE - swing
-NAVINFLUOR -swing
-NH - swing
-NSLNISP - swing
-NETWORK18 - swing
-PEL - swing
-RCF - swing
-RAILTEL -swing
-SCI - swing
-SBFC - swing
-SYRMA - swing
-SWANENERGY - swing
-SONATSOFTW - swing
-TRIDENT - swing
-TTML - swing
-TANLA - swing
-TV18BRDCST - swing
-VTL - swing
-DBREALTY - swing
-UCOBANK - swing
-COCHINSHIP - swing
-CARBORUNIV 
-BHARATFORG
-CONCOR
-HINDZINC
-GUJGASLTD
-GRINDWELL
-IRB
-MSUMI
-MAZDOCK
-SJVN
-SBICARD
-RVNL
-POONAWALLA
-PHOENIXLTD
-SONACOMS
-SCHAEFFLER
-SKFINDIA
-TATAINVEST
-TATAELXSI
-UPL
+1. AAVAS
+2. AARTIIND - swing + buffer
+3. AADHARHFC - swing
+4. ANGELONE - swing
+5. ARE&M - swing
+6. BALAMINES - swing
+7. BEML - swing
+8. AVANTIFEED - swing
+9. ASAHIINDIA - swing
+10. CCL - swing
+11. MAPMYINDIA - swing
+12. BATAINDIA - swing
+13. CASTROLIND - swing
+14. CUB - swing
+15. CERA - swing
+16. DEVYANI - swing
+17. DATAPATTNS -  swing
+18. CROMPTON - swing
+19. ENGINERSIN - swing
+20. EQUITASBNK - swing
+21. GRSE - swing
+22. GRINFRA - swing
+23. FINPIPE - swing
+24. FINEORG - swing
+25. HAPPSTMNDS - swing
+26. GSFC - swing
+27. ITI -swing
+28. IRCON - swing
+29. INOXINDIA - swing
+30. IIFL - swing
+31. HONASA - swing
+32. JKTYRE - swing
+33. JBMA - swing
+34. KNRCON -swing
+35. JYOTICNC - swing
+36. JWL - swing
+37. KANSAINER -swing
+38. KIRLOSBROS - swing
+39. MAHSEAMLES - swing
+40. MMTC - swing
+41. LAURUSLABS - swing
+42. LEMONTREE - swing
+43. NAVINFLUOR -swing
+44. NH - swing
+45. NSLNISP - swing
+46. NETWORK18 - swing
+47. PEL - swing
+48. RCF - swing
+49. RAILTEL -swing
+50. SCI - swing
+51. SBFC - swing
+52. SYRMA - swing
+53. SWANENERGY - swing
+54. SONATSOFTW - swing
+55. TRIDENT - swing
+56. TTML - swing
+57. TANLA - swing
+58. TV18BRDCST - swing
+59. VTL - swing
+60. DBREALTY - swing
+61. UCOBANK - swing
+62. COCHINSHIP - swing
+63. CARBORUNIV
+64. BHARATFORG
+65. CONCOR
+66. HINDZINC
+67. GUJGASLTD
+68. GRINDWELL
+69. IRB
+70. MSUMI
+71. MAZDOCK
+72. SJVN
+73. SBICARD
+74. RVNL
+75. POONAWALLA
+76. PHOENIXLTD
+77. SONACOMS
+78. SCHAEFFLER
+79. SKFINDIA
+80. TATAINVEST
+81. TATAELXSI
+82. UPL
 
