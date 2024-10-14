@@ -32,3 +32,87 @@ Stock list:
 30. UPL
 31. ZEEL
 
+New stocks:
+AAVAS
+AARTIIND - swing + buffer
+AADHARHFC - swing
+ANGELONE - swing
+ARE&M - swing
+BALAMINES - swing
+BEML - swing
+AVANTIFEED - swing
+ASAHIINDIA - swing
+CCL - swing
+MAPMYINDIA - swing
+BATAINDIA - swing
+CASTROLIND - swing
+CUB - swing
+CERA - swing
+DEVYANI - swing
+DATAPATTNS -  swing
+CROMPTON - swing
+ENGINERSIN - swing
+EQUITASBNK - swing
+GRSE - swing
+GRINFRA - swing
+FINPIPE - swing
+FINEORG - swing
+HAPPSTMNDS - swing
+GSFC - swing
+ITI -swing
+IRCON - swing
+INOXINDIA - swing
+IIFL - swing
+HONASA - swing
+JKTYRE - swing
+JBMA - swing
+KNRCON -swing
+JYOTICNC - swing
+JWL - swing
+KANSAINER -swing
+KIRLOSBROS - swing
+MAHSEAMLES - swing
+MMTC - swing
+LAURUSLABS - swing
+LEMONTREE - swing
+NAVINFLUOR -swing
+NH - swing
+NSLNISP - swing
+NETWORK18 - swing
+PEL - swing
+RCF - swing
+RAILTEL -swing
+SCI - swing
+SBFC - swing
+SYRMA - swing
+SWANENERGY - swing
+SONATSOFTW - swing
+TRIDENT - swing
+TTML - swing
+TANLA - swing
+TV18BRDCST - swing
+VTL - swing
+DBREALTY - swing
+UCOBANK - swing
+COCHINSHIP - swing
+CARBORUNIV 
+BHARATFORG
+CONCOR
+HINDZINC
+GUJGASLTD
+GRINDWELL
+IRB
+MSUMI
+MAZDOCK
+SJVN
+SBICARD
+RVNL
+POONAWALLA
+PHOENIXLTD
+SONACOMS
+SCHAEFFLER
+SKFINDIA
+TATAINVEST
+TATAELXSI
+UPL
+
