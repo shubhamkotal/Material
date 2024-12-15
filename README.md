@@ -1,118 +1,83 @@
-Stock list:
+This text explains how a survey was created to help managers evaluate their employees' performance and behavior, ensuring they align with HSBC's core values. Here's the simplified version:
 
-1. ADANIENSOL
-2. ATGL
-3. ASIAN PAINT
-4. BAJAJ FINSERV
-5. Bankdhan bank
-6. bata india
-7. berger paints
-8. DAL BHARAT
-9. DEVYANI
-10. FLUROCHEM
-11. IDFC FIRST BANK
-12. INDUSIND BANK
-13. KOTAK BANK
-14. JUBILANT FOOD
-15. LTIM
-16. LTTS
-17. LAURUSLABS
-18. MANKIND
-19. MPHASIS
-20. NAVINFLUOR
-21. PAYTM
-22. PAGE INDIA
-23. PEL
-24. PGHH
-25. SBI CARD - IMP
-26. SYNGENE - IMP
-27. TATA CHEM - IMP
-28. TTML
-29. TRIDENT - IMP
-30. UPL
-31. ZEEL
+1. **Purpose of the Survey**:  
+   Managers were asked to rate their employees based on their performance and alignment with HSBC's values.
 
-New stocks:
-1. AAVAS
-2. AARTIIND - swing + buffer
-3. AADHARHFC - swing
-4. ANGELONE - swing
-5. ARE&M - swing
-6. BALAMINES - swing
-7. BEML - swing
-8. AVANTIFEED - swing
-9. ASAHIINDIA - swing
-10. CCL - swing
-11. MAPMYINDIA - swing
-12. BATAINDIA - swing
-13. CASTROLIND - swing
-14. CUB - swing
-15. CERA - swing
-16. DEVYANI - swing
-17. DATAPATTNS -  swing
-18. CROMPTON - swing
-19. ENGINERSIN - swing
-20. EQUITASBNK - swing
-21. GRSE - swing
-22. GRINFRA - swing
-23. FINPIPE - swing
-24. FINEORG - swing
-25. HAPPSTMNDS - swing
-26. GSFC - swing
-27. ITI -swing
-28. IRCON - swing
-29. INOXINDIA - swing
-30. IIFL - swing
-31. HONASA - swing
-32. JKTYRE - swing
-33. JBMA - swing
-34. KNRCON -swing
-35. JYOTICNC - swing
-36. JWL - swing
-37. KANSAINER -swing
-38. KIRLOSBROS - swing
-39. MAHSEAMLES - swing
-40. MMTC - swing
-41. LAURUSLABS - swing
-42. LEMONTREE - swing
-43. NAVINFLUOR -swing
-44. NH - swing
-45. NSLNISP - swing
-46. NETWORK18 - swing
-47. PEL - swing
-48. RCF - swing
-49. RAILTEL -swing
-50. SCI - swing
-51. SBFC - swing
-52. SYRMA - swing
-53. SWANENERGY - swing
-54. SONATSOFTW - swing
-55. TRIDENT - swing
-56. TTML - swing
-57. TANLA - swing
-58. TV18BRDCST - swing
-59. VTL - swing
-60. DBREALTY - swing
-61. UCOBANK - swing
-62. COCHINSHIP - swing
-63. CARBORUNIV
-64. BHARATFORG
-65. CONCOR
-66. HINDZINC
-67. GUJGASLTD
-68. GRINDWELL
-69. IRB
-70. MSUMI
-71. MAZDOCK
-72. SJVN
-73. SBICARD
-74. RVNL
-75. POONAWALLA
-76. PHOENIXLTD
-77. SONACOMS
-78. SCHAEFFLER
-79. SKFINDIA
-80. TATAINVEST
-81. TATAELXSI
-82. UPL
+2. **Process to Create the Survey**:  
+   - The team (HSBC and SHL) used existing traits and behaviors from an assessment tool (called OPQ scales) and matched them with HSBC’s values.  
+   - Based on this, they developed specific survey questions that reflect those values.  
 
+3. **Considerations**:  
+   - The survey was designed to be practical (not too long but detailed enough for analysis).  
+   - Efforts were made to ensure participants clearly understood the questions and rated employees consistently.
+
+4. **Outcome**:  
+   A final version of the survey was created and attached in the appendix for reference.
+
+   Here’s a simplified explanation broken down step by step for clarity:
+
+---
+
+### **Purpose of the Study**
+- The goal is to check if **OPQ (Occupational Personality Questionnaire) traits** and **manager ratings** are related.
+- This helps validate whether OPQ is useful for assessing people's alignment with desired values (like HSBC's).
+
+---
+
+### **Step 1: Start with Pearson Correlations**
+- First, we calculate the **Pearson correlation** to see how strongly **OPQ traits** and **manager ratings** are related.
+- Pearson correlation gives two things:
+  1. **Direction** (positive or negative relationship).
+  2. **Strength** (how strong the relationship is).
+
+---
+
+### **Step 2: Correct Correlations for Issues**
+Validation studies face **two challenges**:  
+1. **Unreliable manager ratings**  
+   - Manager ratings can be subjective or inconsistent.  
+   - To correct this, we assume a reliability score (e.g., 0.6) for the manager ratings and adjust the correlations using a formula.  
+   - This gives a better estimate of the "true" relationship.  
+
+2. **Restricted range of OPQ scores**  
+   - In real applications, OPQ scores are spread out, but in this study, the range is limited.  
+   - To fix this, we assume a broader range (e.g., 0.8 standard deviation) and adjust the correlations accordingly.  
+   - After these corrections, correlations typically become stronger.
+
+---
+
+### **Step 3: Run a Regression Analysis**
+- Next, we use **linear regression** to predict the **manager rating composite score** (dependent variable) using OPQ scores (independent variables).  
+- Process:
+  1. Include all OPQ attributes that are statistically related to manager ratings.  
+  2. Refine the regression model by testing combinations of OPQ traits to find the best predictor.  
+  3. The final output is a new score called the **Entity Level Control (ELC) score**, which predicts manager ratings while aligning with the company’s values (e.g., HSBC).
+
+---
+
+### **Step 4: Test the ELC Score**
+- To confirm the ELC score is valid:
+  1. **Compare it with manager ratings:** Check the correlation between ELC and manager ratings to ensure they align.
+  2. **Test by levels and regions:**  
+     - Group employees into senior levels (1-3) and junior levels (7-8).  
+     - Run the test separately for each group and region to check consistency.  
+     - Exclude regions with too few samples (like the Middle East with only 50 cases).
+
+---
+
+### **Step 5: Cross-Validation**
+- To ensure the model works on different samples:
+  1. Split the data into two random groups (50% each).  
+  2. Use the first group to build the regression model and create a weighted ELC score.  
+  3. Test if the weighted ELC score works consistently on both groups (Sample 1 and Sample 2).  
+
+---
+
+### **Key Takeaways**
+- **Correcting correlations:** Fixes data issues (unreliable ratings, restricted score range).  
+- **Regression model:** Builds a new ELC score using OPQ traits to predict manager ratings.  
+- **Validation tests:** Confirms the ELC score is reliable across different levels, regions, and samples.  
+
+---
+
+Let me know if you want me to simplify it further!
