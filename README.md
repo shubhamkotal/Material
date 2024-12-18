@@ -81,3 +81,88 @@ Validation studies face **two challenges**:
 ---
 
 Let me know if you want me to simplify it further!
+
+
+Let me simplify this for you in **short and easy steps** with an example.
+
+---
+
+## **1. What is Happening Here?**  
+This process calculates a **fraud score** for transactions. It uses:  
+- Fraud **probability** (likelihood of fraud)  
+- **Expected fraud amount** (amount of money at risk)  
+
+The **decision boundary** and **diagonal length** help determine how "fraudulent" a transaction is.
+
+---
+
+## **2. Key Concept – Decision Boundary**  
+Imagine a graph:  
+- X-axis: **Expected Fraud Amount**  
+- Y-axis: **Fraud Probability**  
+
+Each **boundary** (e.g., 99%, 75%, 50%) is like a line that separates "safe" transactions from "fraudulent" ones.  
+- Transactions **above the line** are more likely to be fraud.  
+- The **diagonal** is a line from the origin (0,0) to a point on the boundary.  
+
+---
+
+## **3. Simple Steps to Calculate Fraud Score**  
+
+### **Step 1: Find the Fraud Probability and Amount**  
+Example:  
+- Fraud Probability = **0.8** (80%)  
+- Expected Fraud Amount = **4000**
+
+### **Step 2: Calculate the Diagonal Length**  
+The diagonal length is the distance from (0,0) to the transaction point:  
+\[
+\text{Diagonal Length} = \sqrt{(Probability^2 + Amount^2)}
+\]  
+Here:  
+\[
+\text{Diagonal Length} = \sqrt{(0.8)^2 + (4000)^2} \approx 4000.8
+\]
+
+### **Step 3: Normalize the Diagonal Length**  
+- Normalize it by dividing by the **99th percentile diagonal length** (say it’s 5000):  
+\[
+\text{Normalized Length} = \frac{\text{Diagonal Length}}{\text{Diagonal Length at 99th Percentile}}
+\]  
+Here:  
+\[
+\text{Normalized Length} = \frac{4000.8}{5000} = 0.8
+\]
+
+### **Step 4: Apply the Transformation Function**  
+Use the formula to calculate the fraud score:  
+\[
+\text{Fraud Score} = 1000 \times \frac{\exp(\text{Norm Length}) - 1}{\exp(\text{Norm Length}) + 1}
+\]  
+
+Substitute **Normalized Length = 0.8**:  
+\[
+\text{Fraud Score} = 1000 \times \frac{\exp(0.8) - 1}{\exp(0.8) + 1} 
+\]  
+
+After calculation:  
+- Fraud Score ≈ **468**  
+
+---
+
+## **4. What Does the Score Mean?**  
+- The fraud score tells you how risky the transaction is.  
+- **Higher scores** mean higher fraud risk.  
+
+---
+
+### **Summary**  
+
+1. Find the fraud probability and expected fraud amount.  
+2. Calculate the diagonal length.  
+3. Normalize it using the 99% boundary diagonal.  
+4. Use the formula to calculate the fraud score.  
+
+**Example Result**: Fraud Score = **468** → Moderate Risk  
+
+Let me know if you want me to break down any step further!
