@@ -166,3 +166,52 @@ After calculation:
 **Example Result**: Fraud Score = **468** → Moderate Risk  
 
 Let me know if you want me to break down any step further!
+Here is a more detailed explanation for each section:
+
+
+---
+
+1. Business Requirement and Model Output & Usage
+
+This section defines the purpose and objectives of the model based on business needs. It outlines the problems the model aims to solve, the intended audience, and how the model outputs will be used in decision-making or operations. It also highlights any constraints or assumptions considered during development.
+
+
+---
+
+2. Model Development Data
+
+Describes the data used for building the model, including sources, data types, and formats. It explains the data preprocessing steps such as cleaning, transformation, and handling missing values. This section also discusses quality checks performed to ensure data integrity and relevance, along with any sampling techniques applied.
+
+
+---
+
+3. Model Methodology and Model Selection
+
+Covers the approach taken to design the model, including the techniques, algorithms, and frameworks considered. It explains the rationale for choosing a specific methodology and details the evaluation criteria used during model selection. This section may also include preliminary tests, comparisons, and trade-offs made between different methods.
+
+
+---
+
+4. Model Specifications
+
+Provides a technical overview of the final model, including its structure, features, mathematical formulas, and underlying assumptions. It specifies input variables, output formats, and any transformation rules applied during processing. This section also details parameter settings, configuration options, and code snippets if required for implementation.
+
+
+---
+
+5. Model Testing and Evaluation
+
+Focuses on the validation and testing process to assess the model's performance. It describes evaluation metrics such as accuracy, precision, recall, and error rates. Testing scenarios, stress testing, and edge cases are documented to ensure robustness. Results are analyzed to confirm whether the model meets predefined success criteria and business goals.
+
+
+---
+
+6. Model Monitoring Framework
+
+Outlines the strategy for tracking the model’s performance after deployment. It includes plans for monitoring accuracy, data drift, and changes in input data patterns. Regular reporting, alerts, and retraining schedules are specified to ensure long-term reliability. It also defines roles and responsibilities for maintenance and issue resolution.
+
+
+---
+
+Let me know if you'd like further refinements!
+
