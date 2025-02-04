@@ -1,18 +1,26 @@
-MRI #02: Lack of transparency in model score output cut-off definition and probability-to-score conversion process. Severity: HIGH (New)
+MRI #03: Limited Assurance on Dataset Used for Model Development and Overfitting Concerns
+Severity: HIGH (New)
 
 Description
-The model produces risk scores ranging from 0 to 1000, where a higher score indicates a higher likelihood of fraudulent activity. However, the specific score threshold used to classify transactions as fraudulent or non-fraudulent has not been defined or documented. Additionally, the methodology employed to convert predicted probabilities into these risk scores is not disclosed.
 
-The lack of a defined score cut-off is critical as it directly influences classification decisions—whether a transaction is flagged for further investigation or deemed non-risky. Without a transparent threshold, stakeholders cannot ascertain if the model optimally balances the trade-offs between false positives (incorrectly flagging legitimate transactions) and false negatives (missing actual fraudulent activities). This uncertainty can lead to inconsistent decision-making and may compromise the effectiveness of the model.
+The dataset used for model development consists of 0.5 million genuine sessions and only the last six months of fraud cases. However, the data collection process itself is imperfect, leading to a small and imbalanced dataset of fraud versus genuine sessions. Additionally, there is no documented sampling methodology to address this imbalance—no oversampling of fraud cases or undersampling of genuine cases—raising concerns about the model's ability to generalize effectively.
 
-Moreover, without a documented probability-to-score conversion process, it is challenging to ensure that the score accurately reflects the underlying probability of fraud. This opacity can hinder the interpretability and reliability of the model, raising concerns over its consistency across different datasets or time periods.
+Another key issue is the lack of validation on data similarity between the vendor's dataset and HSBC’s dataset. Without this comparison, it is unclear whether the vendor’s model will perform well on HSBC’s actual data. Additionally, the data used for model training has not been verified to ensure it represents the real-world distribution of transactions, which can significantly impact the model's effectiveness in production.
 
-The absence of these critical components makes it difficult to monitor and benchmark model performance effectively. It also undermines confidence in the model's predictive power and hinders its governance, making it difficult to explain or justify decisions made based on the model's output to stakeholders.
+During cross-validation, five different test datasets were used, and the model's true positive rate varied widely from 47% to 86%. This suggests that the XGBoost model is overfitting—it has learned patterns specific to the training data but fails to generalize across different test datasets. The limited dataset used for modeling may not capture the full spectrum of fraud scenarios, leading to poor performance when deployed in real-world settings.
 
 Business Risk / Consequence and Justification of Severity and Classification
-Not providing a well-defined score cut-off and the conversion methodology introduces significant operational and financial risks. Without these elements, the model may either excessively flag legitimate transactions (increasing operational costs and customer dissatisfaction) or fail to identify actual fraud cases (leading to financial losses and reputational damage).
 
-Furthermore, this lack of transparency can impede the ability to perform effective model governance, audit, and compliance activities. It complicates efforts to ensure that the model remains fair, unbiased, and aligned with business objectives over time.
+The absence of proper sampling methods and validation checks introduces significant risks:
 
-Given these factors, the issue is classified with a Severity level of HIGH, as it has a substantial impact on the model's reliability, decision-making efficacy, and overall business performance.
+Model unreliability: The trained model may fail to detect fraud effectively due to an incomplete representation of real-world fraud cases, increasing false negatives and financial losses.
+
+Operational inefficiencies: Without a balanced dataset, the model may produce high false positives, leading to unnecessary investigations, increased operational costs, and customer dissatisfaction.
+
+Regulatory and governance risks: Lack of data validation and justification for data representativeness raises concerns over model fairness, bias, and compliance with governance standards.
+
+Overfitting issues: The high variability in performance across different test datasets (47% to 86%) indicates that the model does not generalize well, making its predictions unreliable in production.
+
+
+Given these factors, the issue is classified as HIGH severity, as it directly affects the model’s performance, decision-making reliability, and governance compliance. Addressing these gaps is critical to ensuring the model remains effective, fair, and aligned with business objectives.
 
