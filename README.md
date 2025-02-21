@@ -15,3 +15,15 @@ Additionally, the lack of exploration limits the model’s adaptability to evolv
 
 This issue is classified with a Severity level of HIGH, as it directly impacts model performance, business efficiency, and fraud mitigation effectiveness. Transparent benchmarking and a broader exploration of machine learning techniques are critical for ensuring that the best possible model is in use.
 
+MRI #04: Lack of Validation to Ensure Sample Representativeness. Severity: HIGH (New)
+
+Description
+No tests have been conducted to confirm that the sample used for model development accurately represents the overall population, specifically the in-scope bank portfolio distribution. Ensuring that the modeling sample aligns with the broader population is critical, as an unrepresentative sample can lead to biased predictions and reduced model reliability.
+
+Without proper validation, the model may be overfitted to certain segments while underrepresenting others, leading to skewed risk assessments. This can result in an increased rate of false positives or false negatives, negatively impacting fraud detection effectiveness and operational efficiency.
+
+Business Risk / Consequence and Justification of Severity and Classification
+If the sample does not reflect the full distribution of bank portfolios, the model’s predictions may not generalize well, leading to poor performance in real-world scenarios. This could result in financial losses due to undetected fraud or unnecessary investigations on legitimate transactions.
+
+Furthermore, the absence of sample validation raises concerns about model fairness and regulatory compliance, as certain customer segments may be disproportionately affected. Given these risks, the issue is classified with a Severity level of HIGH, as it directly impacts the model’s accuracy, fairness, and business credibility.
+
