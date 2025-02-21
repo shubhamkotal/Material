@@ -15,15 +15,15 @@ Additionally, the lack of exploration limits the model’s adaptability to evolv
 
 This issue is classified with a Severity level of HIGH, as it directly impacts model performance, business efficiency, and fraud mitigation effectiveness. Transparent benchmarking and a broader exploration of machine learning techniques are critical for ensuring that the best possible model is in use.
 
-MRI #04: Lack of Validation to Ensure Sample Representativeness. Severity: HIGH (New)
+MRI #04: Lack of Sample Representativeness and Event Rate Adjustment in Model Development. Severity: HIGH (New)
 
 Description
-No tests have been conducted to confirm that the sample used for model development accurately represents the overall population, specifically the in-scope bank portfolio distribution. Ensuring that the modeling sample aligns with the broader population is critical, as an unrepresentative sample can lead to biased predictions and reduced model reliability.
+No validation has been performed to ensure that the sample used for modeling accurately represents the overall population, particularly the in-scope bank portfolio distribution. Without this verification, the model’s predictions may not generalize well, leading to biased outcomes and reduced reliability in event detection.
 
-Without proper validation, the model may be overfitted to certain segments while underrepresenting others, leading to skewed risk assessments. This can result in an increased rate of false positives or false negatives, negatively impacting fraud detection effectiveness and operational efficiency.
+Additionally, the event rate in the sample is less than 1%, meaning event occurrences are highly underrepresented. Despite this, no resampling techniques such as oversampling events or undersampling non-events were explored. An imbalanced dataset can cause the model to be skewed toward the majority class, increasing the likelihood of missing actual events and reducing overall model effectiveness.
 
 Business Risk / Consequence and Justification of Severity and Classification
-If the sample does not reflect the full distribution of bank portfolios, the model’s predictions may not generalize well, leading to poor performance in real-world scenarios. This could result in financial losses due to undetected fraud or unnecessary investigations on legitimate transactions.
+A non-representative sample and unadjusted event rate can significantly impact model performance. If the training data does not reflect the true population distribution, the model may struggle to detect relevant events accurately, leading to missed opportunities or incorrect classifications. This, in turn, can reduce confidence in model-driven decisions and hinder operational efficiency.
 
-Furthermore, the absence of sample validation raises concerns about model fairness and regulatory compliance, as certain customer segments may be disproportionately affected. Given these risks, the issue is classified with a Severity level of HIGH, as it directly impacts the model’s accuracy, fairness, and business credibility.
+Given these risks, the issue is classified with a Severity level of HIGH, as it directly affects the model’s predictive accuracy, consistency, and ability to deliver meaningful insights. Ensuring a representative dataset and addressing class imbalance are critical for building a reliable and actionable model.
 
