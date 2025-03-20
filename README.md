@@ -1,14 +1,17 @@
-MRI #03: Documentation inconsistency and unclear model design explanation. Severity: HIGH (New)
 
-Description
-The document describes a test-control methodology for the model, but the explanation is unclear and lacks sufficient detail. Specifically, the section states:
+MRI # 03: Lack of Portfolio Segmentation Analysis, Leading to Potential Model Bias
 
-"For the test-control of the model we will take some random clients (1% of each decile) and we renamed the Label to a New Label. The idea is to seed clients in the deciles 1-5. First, we convert the clients that are L to be clients H and M. Then we convert the clients that are M to be clients H, and finally the clients that are H we convert to be clients M. With this we can mitigate that the model becomes dependent on the campaigns and when it needs to be remodeled we can do it without the campaign effect."
+Severity: MEDIUM (New)
 
-However, the logic behind these label conversions is not well explained, making it difficult to understand how the test-control process works and why these specific transformations are applied. It is unclear how this seeding strategy mitigates model dependence on campaigns or ensures unbiased retraining. Additionally, the methodology for selecting and modifying labels is not fully documented, raising concerns about consistency and reproducibility.
+Description:
+The current model is built on both credit and debit card transactions, covering six different portfolio segments (UK, CIIOM, CMB, MS, FD, and SVB). However, no statistical validation has been conducted to confirm whether combining these portfolios into a single model is appropriate. Different portfolios may exhibit distinct transactional behaviors, which, if unaccounted for, could lead to suboptimal model performance.
 
-Business Risk / Consequence and Justification of Severity and Classification
-Unclear documentation on model design can lead to misinterpretations, inconsistencies in implementation, and challenges in validating model performance. If stakeholders do not understand how the test-control process is structured, they may struggle to assess its effectiveness or make necessary adjustments. Furthermore, lack of transparency can hinder governance, compliance, and future model retraining efforts.
+Key factors such as transaction size and spending patterns across debit and credit cards could vary significantly, introducing potential inconsistencies in customer classification. Statistical techniques such as clustering or Customer Similarity Index (CSI) should have been applied to assess the homogeneity of these portfolios before deciding on a unified model. Without this validation, the model may not be capturing critical nuances specific to each segment.
 
-Given the potential impact on model reliability and decision-making, this issue is classified as HIGH severity. Clear, well-documented methodologies are essential to ensuring the integrity and effectiveness of the model.
+Business Risk / Consequence and Justification of Severity and Classification:
+Failure to validate portfolio segmentation poses business risks, as model bias could lead to misclassification. If certain portfolios behave differently, the model might underperform for specific segments, leading to missed opportunities or inefficient resource allocation.
+
+However, the current model has shown improved classification compared to its previous version, as evidenced by an increase in the Valid Detection Rate (VDR) and a reduction in the False Positive Rate (FPR). This indicates that, despite the potential risks, the model is performing satisfactorily at present. The long-term concern is whether model accuracy and stability can be maintained without proper portfolio segmentation analysis.
+
+Given that the immediate impact is not critical, but long-term effectiveness could be compromised, this issue is classified as MEDIUM severity. Conducting statistical tests to confirm portfolio similarities would enhance confidence in the model’s robustness and ensure that customer selection is optimized across all segments.
 
