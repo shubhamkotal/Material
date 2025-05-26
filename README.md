@@ -1,4 +1,4 @@
-mri #03: missing evidence that model development data is representative of hsbc’s portfolio
+omri #03: missing evidence that model development data is representative of hsbc’s portfolio
 Severity: MEDIUM (New)
 
 Description
@@ -24,3 +24,17 @@ Business risk / Consequence and justification of severity and classification
 The absence of a defined monitoring framework and vendor oversight introduces a high risk to the ongoing reliability, compliance, and integrity of the model. Without robust monitoring, there is a strong possibility that changes in input data, customer behavior, or market conditions could lead to undetected degradation in model performance. This can result in incorrect risk assessments, operational failures, or regulatory non-compliance.
 
 For third-party models, where HSBC does not control the development lifecycle, this risk is significantly magnified. The inability to ensure or verify timely vendor updates or corrective actions further weakens model governance. Given the potential for substantial business impact and failure to meet internal and regulatory expectations, IMR is raising a high severity MRI.
+
+
+mri #05: limited model performance testing using only gain chart and accuracy-based metric
+Severity: MEDIUM (New)
+
+Description
+The model owner has provided model performance testing results primarily based on an accuracy-based metric and a gain chart. While the gain chart indicates that the model was able to capture approximately 65% of fraud amount, it does not provide a comprehensive view of the model’s effectiveness across different dimensions. Critical metrics such as precision, recall, F1 score, KS statistic, and AUC-ROC are not included, which limits the ability to assess model strengths, weaknesses, and potential trade-offs between false positives and false negatives.
+
+Relying solely on the gain chart restricts interpretability, especially for use cases like fraud detection where class imbalance and operational cost of errors are significant. A broader set of metrics is necessary to evaluate the model’s suitability and make informed decisions about deployment and monitoring.
+
+Business risk / Consequence and justification of severity and classification
+The use of limited performance metrics presents a moderate risk to fully understanding the model’s operational behavior. While the gain chart confirms that the model can identify a substantial portion of fraud value, the absence of other diagnostic metrics leaves potential blind spots in areas such as misclassification rates or cost-efficiency.
+
+This may lead to suboptimal risk management decisions or missed opportunities to optimize model thresholds. Since the current results demonstrate a reasonable capture rate, the immediate business impact may be limited. However, the lack of deeper performance insights weakens confidence in long-term reliability and monitoring. As a result, IMR is raising a medium severity MRI to address this performance evaluation gap.
