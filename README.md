@@ -1,1 +1,9 @@
 
+
+j) Inconsistent implementation UAT test result documentation
+While the implementation report confirms that the Model Approval Form has been completed and approved by the model sponsor—and that UAT sign-off from the model user is based on statistical performance with QS verification (test cases available on the GIMIS tool)—the UAT results across all In-Scope products are not consolidated in a single, structured section. Instead, they are scattered across multiple UAT sign-off emails, making it difficult to track whether all In-Scope products have undergone proper UAT testing. This fragmented documentation limits the ability to objectively assess the model’s readiness and stability, and compare actual versus expected outcomes.
+
+k) Unclear definition and calculation of accuracy metric in monitoring
+While the monitoring framework uses “accuracy” as a performance metric, it is not clearly defined how this differs from the precision and recall metrics used during model development. The rationale for choosing accuracy over other metrics during monitoring is also not provided, creating inconsistency between development and monitoring phases. This mismatch limits transparency and makes it difficult for third-party reviewers to evaluate model performance across the lifecycle.
+Additionally, the accuracy metric is stated to be calculated based on manual judgment by a Quality Analyst (QA), but the documentation does not explain the QA's role, methodology, or assumptions used in the calculation. The accuracy formula appears only in one of the UAT sign-off documents and is not formally included in the model documentation. This lack of clarity on the components used in accuracy calculation and the subjective role of the QA undermines the objectivity and reproducibility of performance monitoring.
+
