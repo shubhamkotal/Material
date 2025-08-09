@@ -1,3 +1,1 @@
 
-Without visibility into the model’s Recall/VDR and FPR, it is difficult to assess how efficiently it detects fraud versus generating false alerts. However, during development, the model showed strong and consistent performance with GINI scores of 81% (out-of-sample), 84% (out-of-time pre-COVID), and 77% (out-of-time COVID), along with an ~18% uplift over the previous model. In the latest monitoring, the UK use case recorded a PSI of 0.03% and GINI of 67%, while the Europe use case had a PSI of 1.70% but no GINI due to zero fraud volume, which also indicates lower fraud risk. Given the stable monitoring results, strong historical performance, and low current fraud rates, the issue is classified as medium severity with no immediate business impact.
-
