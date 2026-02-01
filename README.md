@@ -17,3 +17,13 @@ In addition, following sample selection and data treatment, no evidence has been
 
 Business risk / consequence and justification of severity:
 The absence of representativeness validation and post-treatment diagnostics introduces a risk that the model may be exposed to hidden bias or instability when applied to the full population. However, given that the model demonstrated satisfactory performance during development and continues to show stable monitoring results (including a model lift of ~13), there is no immediate evidence of material adverse impact. The issue primarily represents a governance and assurance gap rather than an observed performance failure; therefore, the residual risk is assessed as Medium.
+
+MRI #XX: model-dependent feature selection applied across heterogeneous algorithms
+Severity: MEDIUM (New)
+
+Description:
+Feature selection was performed using a Random Forest model, where approximately 90% of variables ranked by Random Forest importance were selected and subsequently used as inputs for the LightGBM model. However, Random Forest (bagging-based) and LightGBM (boosting-based) algorithms capture variable importance differently, and variables deemed important in Random Forest may not necessarily be optimal or relevant for LightGBM.
+Applying a model-embedded feature selection technique from one algorithm directly to another introduces potential bias in the variable selection process and limits the ability of LightGBM to fully exploit its own structure and learning dynamics. No evidence has been provided to demonstrate that alternative, model-agnostic feature selection methods were considered upfront, or that feature importance was independently reassessed for the final LightGBM model.
+
+Business risk / consequence and justification of severity:
+This approach may result in sub-optimal feature representation and reduced robustness of the final model, potentially masking future performance degradation or limiting generalisability. However, given that the model demonstrated strong performance during development and continues to show satisfactory monitoring results (with lift of ~13), there is no immediate evidence of material impact. The issue primarily reflects a methodological and governance weakness rather than an observed performance failure; therefore, the residual risk is assessed as Medium.
