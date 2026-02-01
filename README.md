@@ -1,1 +1,8 @@
 
+MRI #XX: absence of population stability assessment in model monitoring
+Severity: MEDIUM (New)
+Description:
+Current model monitoring focuses solely on model lift to assess performance, with no Population Stability Index (PSI) or equivalent stability metrics calculated to evaluate whether the monitoring data remains consistent with the development population. As a result, no evidence has been provided to demonstrate that the distribution of key variables or overall customer behaviour in monthly monitoring data continues to resemble the training data.
+Additionally, the model is designed to target only the top decile (approximately 0.5% of the population). By consistently evaluating lift only within this fixed segment and without population-level stability checks, changes in the underlying data distribution may go undetected. In the absence of PSI, there is limited visibility into data drift over time or the potential need for model recalibration or redevelopment.
+Business risk / consequence and justification of severity:
+Without stability monitoring, material shifts in customer behaviour or input data distributions may remain unidentified, increasing the risk of performance degradation or inappropriate targeting decisions over time. However, given that the model demonstrated satisfactory performance during development and continues to show acceptable results in the latest monitoring cycle (with lift of ~8.3), there is currently no evidence of adverse impact. The issue represents a monitoring completeness and governance gap rather than an observed failure; therefore, the residual risk is assessed as Medium.
